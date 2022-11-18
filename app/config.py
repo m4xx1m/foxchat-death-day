@@ -1,6 +1,6 @@
 import os
 
-DB_FILE   = "db"
+DB_FILE   = "db/last_id"
 CHAT_ID   = int(os.getenv("CHAT_ID", -1001441540954))
 BOT_TOKEN = os.getenv("BOT_TOKEN", None)
 if not BOT_TOKEN:

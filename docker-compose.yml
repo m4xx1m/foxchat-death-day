@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    volumes:
+      - ./db:/app/db
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN?BOT_TOKEN is not set}
+      - CHAT_ID=${CHAT_ID?CHAT_ID is not set}
